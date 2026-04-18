@@ -30,10 +30,10 @@ public class Main {
         System.out.println();
 
         int agePerson = 9;
-        if (agePerson >= 2 && agePerson <= 6) {
+        if (agePerson > 2 && agePerson < 6) {
             System.out.println("Если возраст человека равен " + agePerson + ", то ему нужно ходить в детский сад");
         }
-        if (agePerson >= 7 && agePerson <= 17) {
+        if (agePerson > 7 && agePerson < 17) {
             System.out.println("Если возраст человека равен " + agePerson + ", то ему нужно ходить в школу");
         }
         if (agePerson >= 18 && agePerson <= 24) {
