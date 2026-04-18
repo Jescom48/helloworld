@@ -71,9 +71,9 @@ public class Main {
 
         System.out.println();
 
-        int one = 1;
-        int two = 50;
-        int three = 3;
+        int one = 5;
+        int two = 32;
+        int three = 9;
         if (one > two && one > three || two > one && two > three) {
             if (one > two) {
                 System.out.println("Число " + one + " больше числа " + two + " и больше числа " + three);
