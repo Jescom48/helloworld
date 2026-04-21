@@ -23,7 +23,6 @@ public class Main {
             System.out.println("Установите версию приложения для Android по ссылке");
         }
 
-
         System.out.println();
 
         int year = 1600;
