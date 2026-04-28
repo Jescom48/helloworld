@@ -2,6 +2,98 @@
 public class Main {
     public static void main(String[] args) {
 
+
+        int clientOS = 1;
+        if (clientOS == 0) {
+            System.out.println("Установите версию приложения для iOS по ссылке");
+        } else if (clientOS == 1) {
+            System.out.println("Установите версию приложения для Android по ссылке");
+        }
+
+        System.out.println();
+
+        clientOS = 0;
+        int clientDeviceYear = 2014;
+        if (clientOS == 0 && clientDeviceYear < 2015) {
+            System.out.println("Установите облегченную версию приложения для iOS по ссылке");
+        } else if (clientOS == 0) {
+            System.out.println("Установите версию приложения для iOS по ссылке");
+        } else if (clientOS == 1 && clientDeviceYear < 2015) {
+            System.out.println("Установите облегченную версию приложения для Android по ссылке");
+        } else if (clientOS == 1) {
+            System.out.println("Установите версию приложения для Android по ссылке");
+        }
+
+        System.out.println();
+
+        int year = 1600;
+        if (year >= 1584 && year % 400 == 0) {
+            System.out.println(year + " год является високосным");
+        } else if (year >= 1584 && year % 4 == 0 && year % 100 != 0) {
+            System.out.println(year + " год является високосным");
+        } else {
+            System.out.println(year + " год не является високосным");
+        }
+
+        System.out.println();
+
+        int deliveryDistance = 95;
+        if (deliveryDistance < 20) {
+            System.out.println("Потребуется дней: 1");
+        } else if (deliveryDistance < 60) {
+            System.out.println("Потребуется дней: 2");
+        } else if (deliveryDistance < 100) {
+            System.out.println("Потребуется дней: 3");
+        } else {
+            System.out.println("доставки нет");
+        }
+
+        System.out.println();
+
+        int monthNumber = 12;
+        switch (monthNumber) {
+            case 1:
+                System.out.println(monthNumber + " месяц (Январь) принадлежит к сезону зима.");
+                break;
+            case 2:
+                System.out.println(monthNumber + " месяц (Февраль) принадлежит к сезону зима.");
+                break;
+            case 3:
+                System.out.println(monthNumber + " месяц (Март) принадлежит к сезону весна.");
+                break;
+            case 4:
+                System.out.println(monthNumber + " месяц (Апрель) принадлежит к сезону весна.");
+                break;
+            case 5:
+                System.out.println(monthNumber + " месяц (Май) принадлежит к сезону весна.");
+                break;
+            case 6:
+                System.out.println(monthNumber + " месяц (Июнь) принадлежит к сезону лето.");
+                break;
+            case 7:
+                System.out.println(monthNumber + " месяц (Июль) принадлежит к сезону лето.");
+                break;
+            case 8:
+                System.out.println(monthNumber + " месяц (Август) принадлежит к сезону лето.");
+                break;
+            case 9:
+                System.out.println(monthNumber + " месяц (Сентябрь) принадлежит к сезону осень.");
+                break;
+            case 10:
+                System.out.println(monthNumber + " месяц (Октябрь) принадлежит к сезону осень.");
+                break;
+            case 11:
+                System.out.println(monthNumber + " месяц (Ноябрь) принадлежит к сезону осень.");
+                break;
+            case 12:
+                System.out.println(monthNumber + " месяц (Декабрь) принадлежит к сезону зима.");
+                break;
+            default:
+                System.out.println("Номер месяца не может быть больше 12.");
+        }
+
+
+
         int age = 17;
         if (age >= 18) {
             System.out.println("Если возраст человека равен " + age + ", то он совершеннолетний.");
